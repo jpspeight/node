@@ -25,9 +25,9 @@
         var Names = mongoose.model('Names', nameSchema); //create model with schema
 
         let person = new Names({ //create instance
-            firstName : 'annie',
+            firstName : 'mark',
             lastName : 'dallas',
-            age : 55,
+            age : 5,
             id: 0
         });
 
@@ -38,7 +38,7 @@
 
             //james.id++;
             person.pre('save', function(next, done){
-                person.firstName = line.toString().trim();
+               // person.firstName = line.toString().trim();
                /* this.id++;
                 console.log(this.id);*/
                 next();
