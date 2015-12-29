@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  img(src="/images/default.jpg")
+  h1 Welcome to the About Page
+  p About me
+  p Welcome to Pepperdine click #[a(href='http://community.pepperdine.edu.') here ]for more information
+  ul
+  li Item A
+  li Item B
+  li Item C
+  form(action="/about/5", method="post")
+    input(type="text", name="user_name")
+    br
+    input(type="text", name="password")
+    br
+    input(type="submit", value="Show me!")

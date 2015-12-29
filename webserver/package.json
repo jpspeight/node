@@ -2,10 +2,16 @@
   "name": "webserver",
   "version": "1.0.0",
   "description": "web server app",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body": "^5.1.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "underscore": "^1.8.3"
+  }
 }
