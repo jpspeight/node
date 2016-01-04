@@ -8,7 +8,6 @@
 const fs = require('fs');
 var file = 'error.txt';
 
-
 /*IMPORT data object*/
 var data = require('./data');
 

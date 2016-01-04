@@ -13,7 +13,6 @@ const emitter = new events.EventEmitter(); //Instantiate a new EventEmitter Obje
 const util = require('util');
 
 var Data = function() {
-
     EventEmitter.call(this);
     this.name = {
        'first': 'James',

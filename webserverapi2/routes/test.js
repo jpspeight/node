@@ -6,13 +6,12 @@
 
 var test = {
     prerequest: function(req, res, next){
-        req.james = 'james item';
+        req.id = req.params.id;
         next();
     },
     request: function(req,res){
-        console.log(req.james);
-        data[0].james = req.james;
-        //console.log(req);
+        data[0].james = req.id;
+        data[0].entry = req.query.entry;
         console.log(req.params.id);
         res.status(200).json(data[0]);
     },
